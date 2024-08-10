@@ -28,7 +28,7 @@ formspree_form_id: formspree_form_id
 # Social Media Settings
 # Remove the item if you don't need it
 github_username: rw-martin
-linkedin_username: 
+linkedin_username: rw.martin
 
 # Posts Settings
 show_time_bar: true
@@ -97,7 +97,7 @@ exclude:
   ]
 
 # Theme
-version: v3.1.1
+version: v3.1.2
 
 # Translation
 translations:

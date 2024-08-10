@@ -1,7 +1,7 @@
 # Site Settings
-name: Kasterra's Archive
-title: Kasterra's Archive | A Tech Blog
-description: 열정 넘치는 프론트엔드 개발자의 블로그!
+name: RW Martin's Archive
+title: RW Martin's Archive | A Tech Blog
+description: Good stuff!
 tags:
   - blog
   - template
@@ -18,7 +18,7 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: kasterra@naver.com
+email: rw-martin@nowhere.com
 # See: https://disqus.com/
 disqus_username: disqus_username
 # Contact Form Setting
@@ -27,8 +27,8 @@ formspree_form_id: formspree_form_id
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: kasterra
-linkedin_username: 휘찬-이-952825212
+github_username: rw-martin
+linkedin_username: 
 
 # Posts Settings
 show_time_bar: true
@@ -38,9 +38,9 @@ two_columns_layout: false
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://kasterra.github.io" # the base hostname & protocol for your site
-google_analytics: "UA-201172903-1"
-language: "kr"
+url: "https://rw-martin.github.io" # the base hostname & protocol for your site
+google_analytics: "UA-xxxx"
+language: "en"
 categories_folder: category
 sent_message_url: "/contact/message-sent/"
 

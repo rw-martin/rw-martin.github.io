@@ -176,25 +176,30 @@ July 20, 2018
                     <svg id="clock" class="icon-clock"><use xlink:href="#icon-clock"></use></svg>
                     <span>3 min to read</span>
                 </p>
-                <h1 class="post-title">A wonderful serenity has taken possession of my soul</h1>
-                <p class="post-subtitle">Addressing “400 Bad Request” in Home Assistant and Traefik.</p>
+                <h1 class="post-title">Home Assistant & Traefik - A wonderful serenity has taken possession of my soul</h1>
+                <p class="post-subtitle">Addressing “400 Bad Request” Error</p>
 
                 
                     <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559820489/js-code_n83m7a.jpg" alt="Featured image" class="post-cover">
                 
 
   
-<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-
-<p>n the current context of Home Assistant, the “400 Bad Request” error often stems from improper configuration of reverse proxies and trusted proxies. Here’s a structured approach you could follow:
-
-  Updated Solution:
+<p>When using Traefik as a reverse proxy for Home Assistant, you may encounter a “400 Bad Request” error. This issue often arises due to improper handling of trusted proxy IPs in Home Assistant’s 
+  configuration when running in a Docker environment.In the current context of Home Assistant, the “400 Bad Request” error often stems from improper configuration of reverse proxies and trusted proxies. 
   
+  Here’s a structured approach you could follow:
+
     1.	Review Proxy IP Addresses:
   Ensure that the reverse proxy’s IP address is correctly identified. This can often be found in Home Assistant’s log when the 400 Bad Request error occurs. For example:</p>
 
+  http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 172.16.0.0/12  # This should cover Docker internal network range
+    - 127.0.0.1       # Loopback for local requests
+    - 192.168.1.0/24  # Your local network
+    
 
-  
                 <!-- Pagination links -->
 
 

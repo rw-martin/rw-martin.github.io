@@ -169,7 +169,7 @@
                             
 
 
-July 20, 2018
+11, September 2024
 
                         </time>
                     
@@ -192,13 +192,19 @@ July 20, 2018
     1.	Review Proxy IP Addresses:
   Ensure that the reverse proxy’s IP address is correctly identified. This can often be found in Home Assistant’s log when the 400 Bad Request error occurs. For example:</p>
 
+  <script type="application/ld+json">
+    {
+  
+
   http:
   use_x_forwarded_for: true
   trusted_proxies:
     - 172.16.0.0/12  # This should cover Docker internal network range
     - 127.0.0.1       # Loopback for local requests
     - 192.168.1.0/24  # Your local network
-    
+
+  }
+</script>
 
                 <!-- Pagination links -->
 

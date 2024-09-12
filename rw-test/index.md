@@ -5,12 +5,13 @@ categories: [homelab,hardware]
 tages: [servers,proxy]
 ---
 
-# Welcome
+# A wonderful serenity has taken possession of my entire soul
+Addressing “400 Bad Request” in Home Assistant and Traefik
 
 ![img-description](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559820489/js-code_n83m7a.jpg)
                
 
-Home Assistant needs to be properly configured to trust the proxy (Traefik) that is passing traffic to it.
+Home Assistant needs to be properly configured to trust Traefik that is passing traffic to it.
 
 In your Home Assistant configuration.yaml, add the following:
 ````yml
